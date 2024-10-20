@@ -53,5 +53,3 @@ int main(){
         }
     }
 }
-bebas2 aja
-wkwk
