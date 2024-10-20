@@ -21,7 +21,7 @@ public:
         return find(parent[x]);
     }
 
-    void uni(int x, int y) {
+    void join(int x, int y) {
         parent[find(y)] = find(x);
     }
 
@@ -33,5 +33,8 @@ public:
 
 
 int main() {
+    DSU d(10);
+
+    
     return 0;
 }
