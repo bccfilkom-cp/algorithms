@@ -7,4 +7,4 @@ This repository contains source code that was used in BCC CP Workshops
 1. [Workshop 8 Source Code](./workshop8/)
 
 ## 🌐 Languages
-[![My Skills](https://skillicons.dev/icons?i=cpp)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=cpp,java)](https://skillicons.dev)
