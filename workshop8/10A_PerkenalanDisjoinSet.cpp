@@ -1,3 +1,4 @@
+// Soal : https://tlx.toki.id/courses/competitive-1/chapters/10/problems/A/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -21,7 +22,7 @@ public:
         return find(parent[x]);
     }
 
-    void join(int x, int y) {
+    void uni(int x, int y) {
         parent[find(y)] = find(x);
     }
 
@@ -30,11 +31,23 @@ public:
     }
 };
 
-
-
 int main() {
-    DSU d(10);
-
+    int n, q;
+    cin >> n >> q;
+    DSU* d = new DSU(n);
     
-    return 0;
+    for(int i = 0; i < q; i++) {
+        int a, b, c; 
+        cin >> a >> b >> c;
+        if(a == 1) {
+            d->uni(b, c);
+        } else {
+            if(d->check(b, c)) {
+                cout << "Y\n";
+            } else {
+                cout << "T\n";
+            }
+            
+        }
+    }
 }
